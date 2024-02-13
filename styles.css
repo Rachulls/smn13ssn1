@@ -1,0 +1,20 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(55, 176, 233);
+    color: white;
+    padding: 10px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+button{
+    border-radius: 5px;
+    border: 0px solid black;
+}

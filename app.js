@@ -7,8 +7,8 @@ const url2 = "https://jsonplaceholder.typicode.com/posts";
 // LISTENERS
 btnElement.addEventListener("click", readUsersWithPromises);
 //btnElement.addEventListener("click", readUsersWithAsync);
-btnPost.addEventListener("click", getPostsWithPromises);
-//btnPost.addEventListener("click", getPostsWithAsync);
+btnPost.addEventListener("click", readPostsWithPromises);
+//btnPost.addEventListener("click", readPostsWithAsync);
 
 //FUNCIONES FETCH - PROMISES
 function readUsersWithPromises() {
@@ -36,7 +36,7 @@ async function readUsersWithAsync() {
   }
 }
 
-function getPostsWithPromises() {
+function readPostsWithPromises() {
   fetch(url2)
     .then((response) => {
       return response.json();
@@ -50,7 +50,7 @@ function getPostsWithPromises() {
     });
 }
 
-async function getPostsWithAsync() {
+async function readPostsWithAsync() {
   try {
     const request = await fetch(url2);
     const response = await request.json();
